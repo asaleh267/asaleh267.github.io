@@ -46,7 +46,19 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;}
-
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container .image {
+    order: 1;
+  }
+  header .container .header-text {
+    order: 2;
+  }
+}
 header .container strong {
     color: #266DD3;
 }
@@ -283,6 +295,11 @@ ul.technologies {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  ul.technologies {
+    justify-content: center;
+  }
+}
 ul.technologies li img {
   height: 48px;
   width: 48px;
@@ -300,6 +317,12 @@ ul.technologies li img {
   width: 32%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .projects .project {
+    width: 100%;
+    margin: 8px 0;
+  }
 }
 .projects .project:hover {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5)
