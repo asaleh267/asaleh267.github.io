@@ -227,7 +227,11 @@ header {
 #timeline .timeline-item .timeline-content h4 span {
     float: right;
 }
-
+@media screen and (max-width: 768px) {
+  #timeline .timeline-item .timeline-content h4 span  {
+    font-size: 14px;
+  }
+}
 #timeline .timeline-item .timeline-content.right {
   float: right;
 }
@@ -339,13 +343,13 @@ ul.technologies li img {
   padding: 8px;
 }
 .projects .project.medsolace {
-  background-image: url('../assets/medsolace.png');
+  background-image: url('../assets/medsolace.jpg');
 }
 .projects .project.zeta-tech {
-  background-image: url('../assets/zetatech.png');
+  background-image: url('../assets/zetatech.jpg');
 }
 .projects .project.skh {
-  background-image: url('../assets/starkey.png');
+  background-image: url('../assets/starkey.jpg');
 }
 #social_media {
   padding: 16px 0;
